@@ -1,0 +1,468 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #f5f6fa;
+    --sidebar-width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background-color);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    padding: 1rem 0;
+}
+
+/* Cards */
+.objective-card, .tech-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Icons */
+.fas, .fab {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Placeholders for diagrams and images */
+.diagram-placeholder, .image-placeholder {
+    background: #eee;
+    height: 300px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/* Feature List */
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Diagrammes */
+.diagram {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.diagram img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+.diagram-description {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.diagram-description h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.diagram-description ul, 
+.diagram-description ol {
+    padding-left: 1.5rem;
+}
+
+/* Liens */
+.links-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.link-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+}
+
+.link-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.link-card h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.link-card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.link-card a:hover {
+    background: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .diagram-description {
+        margin-top: 1rem;
+    }
+
+    .links-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* En-tête personnel */
+.personal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 2;
+}
+
+.student-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.student-photo:hover {
+    transform: scale(1.05);
+}
+
+.student-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-details h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.student-titles {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid white;
+}
+
+.student-title {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.student-program {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+}
+
+.student-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.student-contact p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: white;
+}
+
+.student-contact i {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.9);
+    width: 20px;
+}
+
+.university-info {
+    flex: 1;
+    text-align: right;
+    padding-left: 2rem;
+    border-left: 2px solid rgba(255,255,255,0.2);
+}
+
+.university-logo {
+    width: 200px;
+    margin-left: auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.university-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.university-name {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.university-acronym {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Ajustements responsifs */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .student-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .student-titles {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 3px solid white;
+        padding-bottom: 1rem;
+    }
+
+    .university-info {
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .university-logo {
+        margin: 0 auto;
+    }
+
+    .student-contact {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .personal-header {
+        padding: 1rem;
+    }
+
+    .student-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .student-details h2 {
+        font-size: 2rem;
+    }
+
+    .university-logo {
+        width: 150px;
+    }
+}
+
+/* Bouton retour à l'application */
+.back-to-app {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-app:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.back-to-app i {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.back-to-app span {
+    font-weight: 500;
+}
+
+/* Ajustement responsive pour le bouton */
+@media (max-width: 768px) {
+    .back-to-app {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .back-to-app span {
+        display: none;
+    }
+    
+    .back-to-app i {
+        margin: 0;
+    }
+} 

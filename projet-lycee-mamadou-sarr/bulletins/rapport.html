@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Projet - Système de Gestion Scolaire</title>
+    <link rel="stylesheet" href="css/rapport.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Ajouter juste après l'ouverture du body -->
+    <a href="index.php" class="back-to-app">
+        <i class="fas fa-home"></i>
+        <span>Retour à l'application</span>
+    </a>
+
+    <!-- Nouvelle section pour l'en-tête personnel -->
+    <div class="personal-header">
+        <div class="header-content">
+            <div class="student-info">
+                <div class="student-photo">
+                    <img src="assets/img/dev.jpg" alt="Ali Brehima Cisse">
+                </div>
+                <div class="student-details">
+                    <h2>Ali Brehima Cisse</h2>
+                    <div class="student-titles">
+                        <p class="student-title">Étudiant en Master 1</p>
+                        <p class="student-program">Ingénierie Logiciel et Système d'Information</p>
+                    </div>
+                    <div class="student-contact">
+                        <p><i class="fas fa-envelope"></i> cissealibreima@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +223 96 93 93 96</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bamako, Mali</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="university-info">
+                <div class="university-logo">
+                    <img src="assets/img/itma.png" alt="Logo ITMA">
+                </div>
+                <p class="university-name">Institut Africain de Technologie et de Management</p>
+                <p class="university-acronym">ITMA</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#objectifs">Objectifs</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#interfaces">Interfaces</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Système de Gestion Scolaire</h1>
+            <p class="subtitle">Rapport de Projet</p>
+        </header>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <div class="content">
+                <h3>Pourquoi ce projet ?</h3>
+                <p>Ce projet est né d'un besoin réel du Lycée Mamadou SARR de moderniser sa gestion administrative. Face aux défis de :</p>
+                <ul>
+                    <li>La gestion manuelle des notes et bulletins</li>
+                    <li>La difficulté de suivi des élèves</li>
+                    <li>Le temps considérable consacré aux tâches administratives</li>
+                    <li>Les risques d'erreurs dans les calculs</li>
+                </ul>
+                <div class="image-placeholder">
+                    <!-- Image du contexte du projet -->
+                </div>
+            </div>
+        </section>
+
+        <section id="objectifs">
+            <h2>Objectifs du Projet</h2>
+            <div class="content">
+                <div class="objective-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Automatisation</h3>
+                    <p>Automatiser la gestion des notes et la génération des bulletins</p>
+                </div>
+                <div class="objective-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Efficacité</h3>
+                    <p>Réduire le temps de traitement administratif</p>
+                </div>
+                <div class="objective-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance</h3>
+                    <p>Améliorer le suivi des élèves</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies">
+            <h2>Technologies Utilisées</h2>
+            <div class="content">
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <p>Backend et logique métier</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL</h3>
+                        <p>Base de données</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactivité côté client</p>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                        <p>Framework CSS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fonctionnalites">
+            <h2>Fonctionnalités Principales</h2>
+            <div class="content">
+                <div class="feature-list">
+                    <div class="feature">
+                        <h3>Gestion des Classes</h3>
+                        <ul>
+                            <li>Création et modification des classes</li>
+                            <li>Attribution des matières</li>
+                            <li>Gestion des coefficients</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Gestion des Notes</h3>
+                        <ul>
+                            <li>Saisie des notes par matière</li>
+                            <li>Calcul automatique des moyennes</li>
+                            <li>Historique des modifications</li>
+                        </ul>
+                    </div>
+                    <div class="feature">
+                        <h3>Bulletins</h3>
+                        <ul>
+                            <li>Génération automatique</li>
+                            <li>Format PDF standardisé</li>
+                            <li>Calcul des rangs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture">
+            <h2>Architecture du Projet</h2>
+            <div class="content">
+                <h3>Diagramme de Classes</h3>
+                <p>Le diagramme de classes ci-dessous illustre les relations entre les différentes entités du système :</p>
+                <div class="diagram">
+                    <img src="images/diagrammes/classe.png" alt="Diagramme de classes">
+                    <div class="diagram-description">
+                        <h4>Principales Classes :</h4>
+                        <ul>
+                            <li><strong>Élève</strong> : Gestion des informations des élèves</li>
+                            <li><strong>Classe</strong> : Organisation des classes et filières</li>
+                            <li><strong>Matière</strong> : Gestion des matières et coefficients</li>
+                            <li><strong>Note</strong> : Gestion des évaluations</li>
+                            <li><strong>Bulletin</strong> : Génération des bulletins</li>
+                            <li><strong>Utilisateur</strong> : Gestion des accès</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Diagramme de Séquence</h3>
+                <p>Le processus de génération d'un bulletin suit la séquence suivante :</p>
+                <div class="diagram">
+                    <img src="images/diagrammes/sequence.png" alt="Diagramme de séquence">
+                    <div class="diagram-description">
+                        <h4>Étapes principales :</h4>
+                        <ol>
+                            <li>Sélection de la classe et période</li>
+                            <li>Récupération des notes</li>
+                            <li>Calcul des moyennes</li>
+                            <li>Génération du PDF</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h3>Structure de la Base de Données</h3>
+                <p>La base de données est organisée selon le schéma suivant :</p>
+                <div class="diagram">
+                    <img src="images/diagrammes/bdd.png" alt="Schéma de la base de données">
+                    <div class="diagram-description">
+                        <h4>Tables principales :</h4>
+                        <ul>
+                            <li><strong>eleves</strong> : Informations des élèves</li>
+                            <li><strong>classes</strong> : Gestion des classes</li>
+                            <li><strong>matieres</strong> : Liste des matières</li>
+                            <li><strong>notes</strong> : Stockage des notes</li>
+                            <li><strong>users</strong> : Gestion des utilisateurs</li>
+                            <li><strong>filieres</strong> : Gestion des filières</li>
+                            <li><strong>associer</strong> : Association matières-filières</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Liens du Projet</h3>
+                <div class="links-section">
+                    <div class="link-card">
+                        <i class="fab fa-github"></i>
+                        <h4>Code Source</h4>
+                        <a href="https://github.com/votre-compte/gestion-scolaire" target="_blank">
+                            Voir sur GitHub
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4>Documentation</h4>
+                        <a href="docs/documentation.pdf" target="_blank">
+                            Télécharger le PDF
+                        </a>
+                    </div>
+                    <div class="link-card">
+                        <i class="fas fa-play-circle"></i>
+                        <h4>Démonstration</h4>
+                        <a href="https://www.youtube.com/watch?v=votre-video" target="_blank">
+                            Voir la démo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interfaces">
+            <h2>Interfaces Utilisateur</h2>
+            <div class="content">
+                <div class="interface-gallery">
+                    <!-- Les captures d'écran seront ajoutées ici -->
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <div class="content">
+                <h3>Résultats Obtenus</h3>
+                <ul>
+                    <li>Réduction du temps de traitement de 75%</li>
+                    <li>Élimination des erreurs de calcul</li>
+                    <li>Satisfaction des utilisateurs</li>
+                </ul>
+
+                <h3>Perspectives d'Évolution</h3>
+                <ul>
+                    <li>Application mobile pour les enseignants</li>
+                    <li>Portail parents</li>
+                    <li>Module de paiement des frais scolaires</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/rapport.js"></script>
+</body>
+</html> 
